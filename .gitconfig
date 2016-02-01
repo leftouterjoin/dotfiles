@@ -1,0 +1,23 @@
+[http]
+	proxy = http://cihost:3128
+	postBuffer = 524288000
+[https]
+	proxy = http://cihost:3128
+[core]
+	quotepath = false
+	autocrlf = false
+	filemode = false
+	longpaths = true
+	excludesfile = C:\\Users\\z2130220\\Documents\\gitignore_global.txt
+	whitespace = cr-at-eol
+#	editor = "C:/Program Files/vim74-kaoriya-win64/gvim.exe' -c 'set fenc=utf-8'"
+	fscache = true 
+[user]
+	name = leftouterjoin
+	email = leftouterjoin@gmail.com
+[credential]
+	helper = !git-credential-winstore.exe
+#[branch]
+#	autosetuprebase = always
+[pull]
+	rebase = true

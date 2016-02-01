@@ -1,0 +1,71 @@
+" ---設定系---
+" インクリメンタル検索
+set incsearch
+set hlsearch
+
+" 検索時の大文字小文字無視
+set ignorecase
+set smartcase
+
+" クリップボード共有
+set clipboard=unnamed
+
+" insertモードを抜けた時にIME解除
+set imd
+
+" ---検索系---
+" [s][r] 参照をプロジェクトから検索
+eclipseaction SearchRef org.eclipse.jdt.ui.edit.text.java.search.references.in.project
+nnoremap sr :SearchRef<CR>
+
+" ---デバッグ系---
+" [5] ステップイン(F5)
+eclipseaction StepInto org.eclipse.debug.ui.commands.StepInto
+nnoremap 5 :StepInto<CR>
+
+" [6] ステップオーバー(F6)
+eclipseaction StepOver org.eclipse.debug.ui.commands.StepOver
+nnoremap 6 :StepOver<CR>
+
+" [7] ステップリターン(F7)
+eclipseaction StepReturn org.eclipse.debug.ui.commands.StepReturn
+nnoremap 7 :StepReturn<CR>
+
+" [8] リジューム(F8)
+eclipseaction Resume org.eclipse.debug.ui.commands.Resume
+nnoremap 8 :Resume<CR>
+
+" ---右クリ系---
+" [space] + [1] コンテキストメニュー
+eclipseaction showContextMenu org.eclipse.ui.window.showContextMenu
+nnoremap <space>1 :showContextMenu<cr>
+
+" [space] + [2] ルーラー コンテキストメニュー
+eclipseaction ShowRulerContextMenu org.eclipse.ui.edit.text.showRulerContextMenu
+nnoremap <space>2 :ShowRulerContextMenu<CR>
+
+" [space] + [3] コンテンツアシスト コンテキストメニュー
+eclipseaction ContentAssistContextInformation org.eclipse.ui.edit.text.contentAssist.contextInformation
+nnoremap <space>3 :ContentAssistContextInformation<CR>
+
+
+" ---その他---
+" [Esc] + [Esc] 検索のハイライトを消す
+nnoremap <Esc><Esc> :noh<CR>
+
+" [Shift] + [r] .vimrcのリロード
+nnoremap <S-r> :source ~/.vrapperrc<CR>:noh<CR>
+
+" [Space] + [j] 下スクロール
+noremap <Space>j <C-f>
+" [Space] + [k] 上スクロール
+noremap <Space>k <C-b>
+
+" [v][v] カーソル位置の単語をコピー
+nnoremap vv vawy
+
+" [Shift] + [h] 左のタブ
+nnoremap <S-h> gT
+" [Shift] + [l] 右のタブ
+nnoremap <S-l> gt
+
