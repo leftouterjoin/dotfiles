@@ -24,6 +24,8 @@ au BufRead,BufNewFile *.md set filetype=markdown
 let g:previm_open_cmd = 'open -a Google\ Chrome'
 let g:vim_markdown_folding_disabled=1
 
+NeoBundle 'h1mesuke/vim-alignta'
+
 " 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグイン/インデントを有効化する
 filetype plugin indent on
 
