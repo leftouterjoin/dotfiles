@@ -26,6 +26,10 @@ let g:vim_markdown_folding_disabled=1
 
 NeoBundle 'h1mesuke/vim-alignta'
 
+" 最近使ったファイル的な
+NeoBundle 'yegappan/mru'
+:let MRU_Max_Entries=100
+
 " 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグイン/インデントを有効化する
 filetype plugin indent on
 
