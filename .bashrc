@@ -1,6 +1,6 @@
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias gvim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim -g --remote-tab-silent "$@"'
+alias vim='$EDITOR "$@"'
+alias gvim='function _gvim() if [ $# -eq 0 ]; then $EDITOR -g "$@"; else $EDITOR -g --remote-tab-silent "$@"; fi; _gvim "$@"'
 alias vi=vim
 
 . /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
