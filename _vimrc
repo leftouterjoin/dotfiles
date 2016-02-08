@@ -33,6 +33,8 @@ NeoBundle 'h1mesuke/vim-alignta'
 NeoBundle 'yegappan/mru'
 :let MRU_Max_Entries=100
 
+NeoBundle 'Shougo/vimfiler'
+
 " 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグイン/インデントを有効化する
 filetype plugin indent on
 
