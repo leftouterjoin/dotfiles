@@ -20,8 +20,11 @@ NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
 au BufRead,BufNewFile *.md set filetype=markdown
-"let g:previm_open_cmd = 'C:/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe'
-let g:previm_open_cmd = 'open -a Google\ Chrome'
+if has('mac')
+  let g:previm_open_cmd = 'open -a Google\ Chrome'
+else
+  let g:previm_open_cmd = 'C:/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe'
+endif
 let g:vim_markdown_folding_disabled=1
 
 NeoBundle 'h1mesuke/vim-alignta'
