@@ -35,7 +35,10 @@ NeoBundle 'yegappan/mru'
 
 NeoBundle 'Shougo/vimfiler'
 let g:vimfiler_as_default_explorer = 1
-command! Vf VimFiler -buffer-name=explorer -split -simple -winwidth=35 -toggle -no-quit
+let g:vimfiler_edit_action = 'tabopen'
+"command! Vf VimFiler -buffer-name=explorer -split -simple -winwidth=35 -toggle -no-quit
+autocmd FileType vimfiler nmap <buffer> <S-h> gT
+autocmd FileType vimfiler nmap <buffer> <S-l> gt
 
 " 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグイン/インデントを有効化する
 filetype plugin indent on
