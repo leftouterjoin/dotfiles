@@ -34,6 +34,8 @@ NeoBundle 'yegappan/mru'
 :let MRU_Max_Entries=100
 
 NeoBundle 'Shougo/vimfiler'
+let g:vimfiler_as_default_explorer = 1
+command! Vf VimFiler -buffer-name=explorer -split -simple -winwidth=35 -toggle -no-quit
 
 " 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグイン/インデントを有効化する
 filetype plugin indent on
