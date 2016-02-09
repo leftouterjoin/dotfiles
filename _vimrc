@@ -1,6 +1,12 @@
 colorscheme molokai
 set t_Co=256
 
+set fileformats=unix,dos,mac
+
+set guifont=Inconsolata:h12
+set enc=utf-8
+set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
+
 set directory=~/.vim/tmp
 set backupdir=~/.vim/tmp
 set undodir=~/.vim/tmp
@@ -23,10 +29,6 @@ if has('vim_starting')
   set nocompatible
   set runtimepath+=~/.vim/bundle/neobundle.vim
 endif
-
-set enc=utf-8
-set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
-set guifont=Inconsolata:h12
 
 set winaltkeys=yes
 "set guioptions=mM
