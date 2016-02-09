@@ -21,7 +21,8 @@
 # mklink %userprofile%\.gitconfig D:\myworks-github\dotfiles\.gitconfig
 
 # [at mac]
-# cp -p ~/.gitconfig.sample ~/.gitconfig.proxy
-# cp -p ~/.gitconfig.sample ~/.gitconfig.user
-# ln -s ~/.gitconfig.os ~/.gitconfig.os.mac
-# ln -s ~/.gitconfig ~/.gitconfig
+# cp -p ~/myworks-github/dotfiles/.gitconfig.proxy.sample ~/.gitconfig.proxy
+# cp -p ~/myworks-github/dotfiles/.gitconfig.user.sample ~/.gitconfig.user
+# ln -s ~/myworks-github/dotfiles/.gitconfig.os ~/.gitconfig.os.mac
+# ln -s ~/myworks-github/dotfiles/.gitconfig ~/.gitconfig
+
