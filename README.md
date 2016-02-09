@@ -27,3 +27,8 @@ mklink %userprofile%\.bashrc D:\myworks-github\dotfiles\.bashrc
 mklink %userprofile%\.bashrc_win D:\myworks-github\dotfiles\.bashrc_win
 ```
 
+```bash
+cp -Rp /usr/share/vim/vim74-kaoriya-win64/vim74/syntax ~/.vim/
+cp -p /usr/share/vim/vim74-kaoriya-win64/vim74/filetype.vim ~/.vim/
+```
+
