@@ -1,0 +1,5 @@
+#[http]
+#	proxy = http://proxy
+#[https]
+#	proxy = http://proxy
+#

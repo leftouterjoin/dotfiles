@@ -1,23 +1,27 @@
 [http]
-	proxy = http://cihost:3128
 	postBuffer = 524288000
-[https]
-	proxy = http://cihost:3128
 [core]
-	quotepath = false
 	autocrlf = false
 	filemode = false
 	longpaths = true
-	excludesfile = C:\\Users\\z2130220\\Documents\\gitignore_global.txt
 	whitespace = cr-at-eol
-#	editor = "C:/Program Files/vim74-kaoriya-win64/gvim.exe' -c 'set fenc=utf-8'"
+	editor = vim
 	fscache = true 
-[user]
-	name = leftouterjoin
-	email = leftouterjoin@gmail.com
-[credential]
-	helper = !git-credential-winstore.exe
-#[branch]
-#	autosetuprebase = always
 [pull]
 	rebase = true
+[include]
+	path = .gitconfig.os
+	path = .gitconfig.proxy
+	path = .gitconfig.user
+
+# [at win]
+# copy D:\myworks-github\dotfiles\.gitconfig.proxy.sample %userprofile%\.gitconfig.proxy
+# copy D:\myworks-github\dotfiles\.gitconfig.user.sample %userprofile%\.gitconfig.user
+# mklink %userprofile%\.gitconfig.os D:\myworks-github\dotfiles\.gitconfig.os.win7
+# mklink %userprofile%\.gitconfig D:\myworks-github\dotfiles\.gitconfig
+
+# [at mac]
+# cp -p ~/.gitconfig.sample ~/.gitconfig.proxy
+# cp -p ~/.gitconfig.sample ~/.gitconfig.user
+# ln -s ~/.gitconfig.os ~/.gitconfig.os.mac
+# ln -s ~/.gitconfig ~/.gitconfig
