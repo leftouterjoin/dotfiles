@@ -1,7 +1,7 @@
 if [[ -f /usr/share/vim/vim74-kaoriya-win64/gvim.exe ]]; then
     export EDITOR=/usr/share/vim/vim74-kaoriya-win64/gvim.exe
     alias gvim='function _gvim() if [ $# -eq 0 ]; then $EDITOR "$@"; else $EDITOR --remote-tab-silent "$@"; fi; _gvim "$@"'
-#    alias vim=gvim
+    alias vim='function _vim() if [ $# -eq 0 ]; then vim; else vim -p$# "$@"; fi; _vim "$@"'
 #    alias vi=vim
 fi
 
