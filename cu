@@ -5,7 +5,7 @@
 DST=~/.gitconfig.user
 #DST=~/hoge
 
-CUR=$(readlink -f ${DST})
+CUR=$(readlink ${DST})
 echo "old setting: " ${CUR}
 
 CUR=$(basename ${CUR})
@@ -26,7 +26,7 @@ for file in ${FILE_LIST[@]}; do
     fi
 done
 
-echo -e "\e[31mnew setting: " ${SRC}"\e[m"
+printf "\e[31mnew setting:  ${SRC}\e[m\n"
 
 if [ "$(uname)" == 'Darwin' ]; then
     rm ${DST}
