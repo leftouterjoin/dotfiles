@@ -7,6 +7,14 @@ set undodir=~/.vim/tmp
 
 autocmd FileType text setlocal textwidth=0
 
+" [space] + [cp] ファイルパスをコピーして表示
+function! CopyPath()
+    let @*=expand('%:p')
+    return @*
+endfunction
+command! -nargs=0 CopyPath call CopyPath()
+nnoremap <Space>cp :echo CopyPath()<CR>
+
 nnoremap <Esc><Esc> :noh<CR>
 set showtabline=2
 
@@ -143,7 +151,8 @@ NeoBundle 'h1mesuke/vim-alignta'
 
 " 最近使ったファイル的な
 NeoBundle 'yegappan/mru'
-:let MRU_Max_Entries=100
+let MRU_Max_Entries=100
+let MRU_Auto_Close=0
 
 NeoBundle 'Shougo/vimfiler'
 let g:vimfiler_as_default_explorer = 1
