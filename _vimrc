@@ -52,6 +52,8 @@ set langmenu=ja_jp.utf-8
 source $VIMRUNTIME/menu.vim
 
 set number
+set hlsearch
+set cursorline
 
 "タブ、空白、改行の可視化
 set list
@@ -77,8 +79,12 @@ nnoremap >q :cnext<CR>       " 次へ
 nnoremap <Q :<C-u>cfirst<CR> " 最初へ
 nnoremap >Q :<C-u>clast<CR>  " 最後へ
 
+" very magic
+:nnoremap / /\v
+:cnoremap %s/ %s/\v
 
-
+" grep関連
+autocmd QuickFixCmdPost *grep* cwindow
 
 " Setting some decent VIM settings for programming
 
@@ -162,6 +168,10 @@ let g:vimfiler_edit_action = 'tabopen'
 "command! Vf VimFiler -buffer-name=explorer -split -simple -winwidth=35 -toggle -no-quit
 autocmd FileType vimfiler nmap <buffer> <S-h> gT
 autocmd FileType vimfiler nmap <buffer> <S-l> gt
+
+" 修正行のハイライト
+NeoBundle 'leftouterjoin/changed'
+highlight ChangedDefaultHl cterm=bold ctermbg=red ctermfg=white gui=bold guibg=red guifg=white
 
 " 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグイン/インデントを有効化する
 filetype plugin indent on
