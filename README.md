@@ -33,3 +33,10 @@ cp -Rp /usr/share/vim/vim74-kaoriya-win64/vim74/syntax ~/.vim/
 cp -p /usr/share/vim/vim74-kaoriya-win64/vim74/filetype.vim ~/.vim/
 ```
 
+```dos
+cd C:\Windows\System32
+mklink diff.exe "C:\Program Files\Git\usr\bin\diff.exe"
+mklink msys-iconv-2.dll "C:\Program Files\Git\usr\bin\msys-iconv-2.dll"
+mklink msys-2.0.dll "C:\Program Files\Git\usr\bin\msys-2.0.dll"
+mklink msys-intl-8.dll "C:\Program Files\Git\usr\bin\msys-intl-8.dll"
+```
