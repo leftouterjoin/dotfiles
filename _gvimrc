@@ -10,4 +10,4 @@ set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
 highlight! ChangedDefaultHl cterm=bold ctermbg=red ctermfg=white gui=bold guibg=red guifg=white
 
 set shellslash
-
+set noshelltemp
