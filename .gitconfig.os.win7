@@ -1,5 +1,3 @@
-[core]
-	quotepath = false
 [credential]
 	helper = !git-credential-winstore.exe
 
