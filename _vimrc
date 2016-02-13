@@ -3,7 +3,12 @@ set t_Co=256
 
 set fileformats=unix,dos,mac
 
-set guifont=Inconsolata:h12
+if has('mac')
+  set guifont=Ricty\ Diminished:h18
+else
+  set guifont=Inconsolata:h14
+endif
+
 set enc=utf-8
 set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
 
