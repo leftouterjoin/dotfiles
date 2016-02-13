@@ -7,7 +7,9 @@ set guifont=Inconsolata:h12
 set enc=utf-8
 set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
 
-highlight! ChangedDefaultHl cterm=bold ctermbg=red ctermfg=white gui=bold guibg=red guifg=white
+"highlight ChangedDefaultHl cterm=bold ctermbg=green ctermfg=black gui=bold guibg=green guifg=black
+"highlight ChangedDefaultHl cterm=bold ctermbg=red ctermfg=white gui=bold guibg=red guifg=white
+highlight ChangedDefaultHl cterm=bold ctermbg=blue ctermfg=white gui=bold guibg=blue guifg=white
 
 set shellslash
 set noshelltemp
