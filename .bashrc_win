@@ -4,6 +4,7 @@ if [[ -f /usr/share/vim/vim74-kaoriya-win64/gvim.exe ]]; then
     alias vim='function _vim() if [ $# -eq 0 ]; then vim; else vim -p$# "$@"; fi; _vim "$@"'
     alias vi=vim
     alias vf='vim +VimFiler'
+    alias gvf='$EDITOR +VimFiler'
 fi
 
 alias javac='javac -J-Dfile.encoding=UTF-8'
