@@ -178,6 +178,10 @@ autocmd FileType vimfiler nmap <buffer> <S-l> gt
 NeoBundle 'leftouterjoin/changed'
 highlight ChangedDefaultHl cterm=bold ctermbg=red ctermfg=white gui=bold guibg=red guifg=white
 
+" 自動補完
+NeoBundle 'Shougo/neocomplete'
+let g:neocomplete#enable_at_startup = 1
+
 " 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグイン/インデントを有効化する
 filetype plugin indent on
 
