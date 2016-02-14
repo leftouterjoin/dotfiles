@@ -3,6 +3,7 @@ if [[ -d /Applications/MacVim.app ]]; then
     alias gvim='function _gvim() if [ $# -eq 0 ]; then $EDITOR -g "$@"; else $EDITOR -g --remote-tab-silent "$@"; fi; _gvim "$@"'
     alias vim='function _vim() if [ $# -eq 0 ]; then $EDITOR; else $EDITOR -p$# "$@"; fi; _vim "$@"'
     alias vi=vim
+    alias vf='vim +VimFiler'
 fi
 
 # Git自動補完設定
