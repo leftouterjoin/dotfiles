@@ -51,6 +51,16 @@ nnoremap <S-h> gT
 " [Shift] + [l] 右のタブ
 nnoremap <S-l> gt
 
+" [Ctrl] + [Shift] + [...] ヤンクする削除
+nnoremap <Space>x x
+nnoremap <Space>dd dd
+" ヤンクしない削除
+nnoremap x "_x
+nnoremap D "_D
+nnoremap dd "_dd
+nnoremap cc "_cc
+vnoremap c "_c
+
 " set enc=utf-8でメニューが文字化けする対応
 source $VIMRUNTIME/delmenu.vim
 set langmenu=ja_jp.utf-8
