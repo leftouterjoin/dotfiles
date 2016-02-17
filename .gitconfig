@@ -10,6 +10,8 @@
 	quotepath = false
 [pull]
 	rebase = true
+[merge]
+	ff = false
 [include]
 	path = .gitconfig.os
 	path = .gitconfig.proxy
