@@ -11,5 +11,7 @@ alias javac='javac -J-Dfile.encoding=UTF-8'
 alias java='java -Dfile.encoding=UTF-8'
 alias jar='jar -J-Dfile.encoding=UTF-8'
 
+alias tree='cmd //c tree //A //F'
+
 export GRADLE_OPTS=-Dfile.encoding=UTF-8
 
