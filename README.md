@@ -26,6 +26,7 @@ mklink %userprofile%\.vrapperrc D:\myworks-github\dotfiles\.vrapperrc
 mklink %userprofile%\.bashrc D:\myworks-github\dotfiles\.bashrc
 mklink %userprofile%\.bashrc_win D:\myworks-github\dotfiles\.bashrc_win
 mklink %userprofile%\cu D:\myworks-github\dotfiles\cu
+mklink "C:\Windows\System32\git-bash.bat" D:\myworks-github\dotfiles\git-bash.bat
 ```
 
 ```bash
