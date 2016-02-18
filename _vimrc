@@ -69,6 +69,7 @@ source $VIMRUNTIME/menu.vim
 set number
 set hlsearch
 set cursorline
+set autochdir
 
 "タブ、空白、改行の可視化
 set list
