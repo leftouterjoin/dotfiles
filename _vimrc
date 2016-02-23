@@ -18,7 +18,7 @@ set undodir=~/.vim/tmp
 
 autocmd FileType text setlocal textwidth=0
 
-" [space] + [cp] ファイルパスをコピーして表示
+" [Space][c][p] ファイルパスをコピーして表示
 function! CopyPath()
     let @*=expand('%:p')
     return @*
@@ -38,9 +38,9 @@ endif
 set winaltkeys=yes
 "set guioptions=mM
 
-" [space] + [j] 下スクロール
+" [Space][j] 下スクロール
 noremap <Space>j <C-f>
-" [space] + [k] 上スクロール
+" [Space][k] 上スクロール
 noremap <Space>k <C-b>
 
 " [v][v] カーソル位置の単語をコピー
@@ -51,7 +51,7 @@ nnoremap <S-h> gT
 " [Shift] + [l] 右のタブ
 nnoremap <S-l> gt
 
-" [Ctrl] + [Shift] + [...] ヤンクする削除
+" [Ctrl][Shift][...] ヤンクする削除
 nnoremap <Space>x x
 nnoremap <Space>dd dd
 " ヤンクしない削除
@@ -61,6 +61,9 @@ nnoremap dd "_dd
 nnoremap cc "_cc
 vnoremap c "_c
 
+" [Space][c][d] ファイルのディレクトリに移動
+nnoremap <Space>cd :execute 'lcd' expand('%:p:h') \| :pwd<CR>
+
 " set enc=utf-8でメニューが文字化けする対応
 source $VIMRUNTIME/delmenu.vim
 set langmenu=ja_jp.utf-8
@@ -69,7 +72,6 @@ source $VIMRUNTIME/menu.vim
 set number
 set hlsearch
 set cursorline
-set autochdir
 
 "タブ、空白、改行の可視化
 set list
