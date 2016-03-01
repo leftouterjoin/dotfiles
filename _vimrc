@@ -52,8 +52,8 @@ nnoremap <S-h> gT
 nnoremap <S-l> gt
 
 " [Ctrl][Shift][...] ヤンクする削除
-nnoremap <Space>x x
-nnoremap <Space>dd dd
+nnoremap <S-x> x
+nnoremap <S-d><S-d> dd
 " ヤンクしない削除
 nnoremap x "_x
 nnoremap D "_D
