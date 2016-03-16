@@ -195,6 +195,9 @@ highlight ChangedDefaultHl cterm=bold ctermbg=red ctermfg=white gui=bold guibg=r
 NeoBundle 'Shougo/neocomplete'
 let g:neocomplete#enable_at_startup = 1
 
+" 高速Grep
+NeoBundle 'rking/ag.vim'
+
 " 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグイン/インデントを有効化する
 filetype plugin indent on
 
