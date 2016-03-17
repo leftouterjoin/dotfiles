@@ -53,6 +53,7 @@ nnoremap <S-l> gt
 
 " [Ctrl][Shift][...] ヤンクする削除
 nnoremap <S-x> x
+vnoremap <S-x> x
 nnoremap <S-d><S-d> dd
 " ヤンクしない削除
 nnoremap x "_x
@@ -197,6 +198,11 @@ let g:neocomplete#enable_at_startup = 1
 
 " 高速Grep
 NeoBundle 'rking/ag.vim'
+if executable('ag')
+  let g:unite_source_grep_command = 'ag'
+  let g:unite_source_grep_default_opts = '--vimgrep'
+  let g:unite_source_grep_recursive_opt = ''
+endif
 
 " 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグイン/インデントを有効化する
 filetype plugin indent on
