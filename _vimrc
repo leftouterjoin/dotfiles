@@ -65,6 +65,12 @@ vnoremap c "_c
 " [Space][c][d] ファイルのディレクトリに移動
 nnoremap <Space>cd :execute 'lcd' expand('%:p:h') \| :pwd<CR>
 
+" 挿入モードのカーソル移動
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+
 " set enc=utf-8でメニューが文字化けする対応
 source $VIMRUNTIME/delmenu.vim
 set langmenu=ja_jp.utf-8
