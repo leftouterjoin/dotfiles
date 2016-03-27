@@ -61,6 +61,7 @@ nnoremap D "_D
 nnoremap dd "_dd
 nnoremap cc "_cc
 vnoremap c "_c
+vnoremap x "_x
 
 " [Space][c][d] ファイルのディレクトリに移動
 nnoremap <Space>cd :execute 'lcd' expand('%:p:h') \| :pwd<CR>
@@ -154,7 +155,7 @@ if has("autocmd")
       autocmd Syntax gitcommit setlocal textwidth=74
 endif " has("autocmd")
 
-
+set whichwrap=b,s,h,l,<,>,[,]
 
 
 " neobundle.vimの初期化 
