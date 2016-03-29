@@ -72,6 +72,12 @@ inoremap <C-k> <Up>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 
+" コマンドラインモードのカーソル移動
+cnoremap <C-j> <Down>
+cnoremap <C-k> <Up>
+cnoremap <C-h> <Left>
+cnoremap <C-l> <Right>
+
 " set enc=utf-8でメニューが文字化けする対応
 source $VIMRUNTIME/delmenu.vim
 set langmenu=ja_jp.utf-8
