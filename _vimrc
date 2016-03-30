@@ -51,30 +51,6 @@ nnoremap <S-h> gT
 " [Shift] + [l] 右のタブ
 nnoremap <S-l> gt
 
-if !has('gui_running')
-    " MapFastKeycode: helper for fast keycode mappings
-    " makes use of unused vim keycodes <[S-]F15> to <[S-]F37>
-    function! <SID>MapFastKeycode(key, keycode)
-        if s:fast_i == 46
-            echohl WarningMsg
-            echomsg "Unable to map ".a:key.": out of spare keycodes"
-            echohl None
-            return
-        endif
-        let vkeycode = '<'.(s:fast_i/23==0 ? '' : 'S-').'F'.(15+s:fast_i%23).'>'
-        exec 'set '.vkeycode.'='.a:keycode
-        exec 'map '.vkeycode.' '.a:key
-        let s:fast_i += 1
-    endfunction
-    let s:fast_i = 0
-
-    call <SID>MapFastKeycode('<C-Tab>', "^[[27;5;9~&")
-    call <SID>MapFastKeycode('<S-C-Tab>', "^[[27;6;9~&")
-
-    nnoremap <C-Tab> :tabn<CR>
-    nnoremap <S-C-Tab> :tabp<CR>
-endif
-
 " [Ctrl][Shift][...] ヤンクする削除
 nnoremap <S-x> x
 vnoremap <S-x> x
