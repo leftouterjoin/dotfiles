@@ -4,6 +4,7 @@ ln -s ~/myworks-github/dotfiles/_gvimrc ~/.gvimrc
 ln -s ~/myworks-github/dotfiles/.vrapperrc ~/.vrapperrc
 ln -s ~/myworks-github/dotfiles/.bashrc ~/.bashrc
 ln -s ~/myworks-github/dotfiles/.bashrc_mac ~/.bashrc_mac
+ln -s ~/myworks-github/dotfiles/conf.d ~/.vim/conf.d
 
 mkdir ~/.vim/tmp
 
@@ -20,11 +21,13 @@ fi
 ```
 
 ```dos
+mklink %userprofile%\.minttyrc D:\myworks-github\dotfiles\.minttyrc
 mklink %userprofile%\.vimrc D:\myworks-github\dotfiles\_vimrc
 mklink %userprofile%\.gvimrc D:\myworks-github\dotfiles\_gvimrc
 mklink %userprofile%\.vrapperrc D:\myworks-github\dotfiles\.vrapperrc
 mklink %userprofile%\.bashrc D:\myworks-github\dotfiles\.bashrc
 mklink %userprofile%\.bashrc_win D:\myworks-github\dotfiles\.bashrc_win
+mklink /D %userprofile%\.vim\conf.d D:\myworks-github\dotfiles\conf.d
 mklink %userprofile%\cu D:\myworks-github\dotfiles\cu
 mklink "C:\Windows\System32\git-bash.bat" D:\myworks-github\dotfiles\git-bash.bat
 ```
