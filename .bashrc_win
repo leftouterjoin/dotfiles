@@ -15,3 +15,7 @@ alias tree='cmd //c tree //A //F'
 
 export GRADLE_OPTS=-Dfile.encoding=UTF-8
 
+export http_proxy=http://10.116.15.154:3128
+export https_proxy=$http_proxy
+export no_proxy=10.114.2.217,10.116.15.152
+
