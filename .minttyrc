@@ -4,3 +4,6 @@ Locale=ja_JP
 Charset=UTF-8
 FontHeight=12
 Transparency=high
+OpaqueWhenFocused=no
+Columns=150
+Rows=30
