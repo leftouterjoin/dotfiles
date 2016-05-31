@@ -3,6 +3,9 @@ set t_Co=256
 
 set fileformats=unix,dos,mac
 
+" 行末を超えて矩形選択
+set virtualedit+=block
+
 if has('mac')
   set guifont=Ricty\ Diminished:h18
 else
@@ -71,12 +74,14 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
+inoremap <C-x> <Delete>
 
 " コマンドラインモードのカーソル移動
 cnoremap <C-j> <Down>
 cnoremap <C-k> <Up>
 cnoremap <C-h> <Left>
 cnoremap <C-l> <Right>
+cnoremap <C-x> <Delete>
 
 " set enc=utf-8でメニューが文字化けする対応
 source $VIMRUNTIME/delmenu.vim
