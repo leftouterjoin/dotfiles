@@ -18,3 +18,7 @@ highlight ChangedDefaultHl cterm=bold ctermbg=blue ctermfg=white gui=bold guibg=
 
 set shellslash
 set noshelltemp
+
+set lines=30
+set columns=130
+
