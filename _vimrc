@@ -228,8 +228,8 @@ if executable('pt')
   let g:unite_source_grep_recursive_opt = ''
 endif
 
-" 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグイン/インデントを有効化する
-filetype plugin indent on
+" 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグインを有効化する
+filetype plugin on
 
 " インストールのチェック
 NeoBundleCheck
