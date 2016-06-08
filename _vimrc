@@ -21,6 +21,12 @@ set undodir=~/.vim/tmp
 
 autocmd FileType text setlocal textwidth=0
 
+" 秀丸っぽい設定
+noremap <C-k> 4k
+noremap <C-j> 4j
+noremap <C-h> b
+noremap <C-l> w
+
 " [Space][c][p] ファイルパスをコピーして表示
 function! CopyPath()
     let @*=expand('%:p')
@@ -42,9 +48,9 @@ set winaltkeys=yes
 "set guioptions=mM
 
 " [Space][j] 下スクロール
-noremap <Space>j <C-f>
+noremap <Space>j <C-d>
 " [Space][k] 上スクロール
-noremap <Space>k <C-b>
+noremap <Space>k <C-u>
 
 " [v][v] カーソル位置の単語をコピー
 nnoremap vv vawy
