@@ -27,8 +27,8 @@ set undodir=~/.vim/tmp
 autocmd FileType text setlocal textwidth=0
 
 " 秀丸っぽい設定
-noremap <C-k> 4k
-noremap <C-j> 4j
+noremap <C-k> 5k
+noremap <C-j> 5j
 noremap <C-h> b
 noremap <C-l> w
 
