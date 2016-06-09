@@ -4,7 +4,7 @@
 " ■■読み込み・初期化関連
 " vim起動時のみruntimepathにneobundle.vimを追加
 if has('vim_starting')
-  set nocompatible
+"  set nocompatible
   set runtimepath+=~/.vim/bundle/neobundle.vim
 endif
 " neobundle.vimの初期化 
