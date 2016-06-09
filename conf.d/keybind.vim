@@ -63,6 +63,8 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
 " -------------------------------------
 " ■■編集
 " 削除
