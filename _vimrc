@@ -82,6 +82,9 @@ inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 inoremap <C-x> <Delete>
 
+" 挿入モードで貼付け
+inoremap <C-v> <Esc>"*pa
+"
 " コマンドラインモードのカーソル移動
 cnoremap <C-j> <Down>
 cnoremap <C-k> <Up>
