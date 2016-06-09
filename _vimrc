@@ -15,6 +15,11 @@ endif
 set enc=utf-8
 set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
 
+" バックアップ取らない
+set nobackup
+" スワップファイル作らない
+set noswapfile
+
 set directory=~/.vim/tmp
 set backupdir=~/.vim/tmp
 set undodir=~/.vim/tmp
@@ -80,6 +85,8 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
 inoremap <C-x> <Delete>
 
 " 挿入モードで貼付け

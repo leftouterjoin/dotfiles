@@ -13,6 +13,12 @@ source $VIMRUNTIME/delmenu.vim
 set langmenu=ja_jp.utf-8
 source $VIMRUNTIME/menu.vim
 
+" ■■バックアップ・スワップ設定
+" バックアップ取らない
+set nobackup
+" スワップファイル作らない
+set noswapfile
+
 " ■■一次ディレクトリ
 set directory=~/.vim/tmp
 set backupdir=~/.vim/tmp
