@@ -102,3 +102,10 @@ set ai
 " grep関連
 autocmd QuickFixCmdPost *grep* cwindow
 
+" -------------------------------------
+" ■■スクロール関連
+" 横スクロール
+set sidescroll=1
+set nowrap
+set guioptions+=b
+
