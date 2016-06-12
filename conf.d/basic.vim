@@ -8,11 +8,6 @@ else
   set guifont=Inconsolata:h14
 endif
 
-" ■■et enc=utf-8でメニューが文字化けする対応
-source $VIMRUNTIME/delmenu.vim
-set langmenu=ja_jp.utf-8
-source $VIMRUNTIME/menu.vim
-
 " ■■バックアップ・スワップ設定
 " バックアップ取らない
 set nobackup

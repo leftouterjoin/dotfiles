@@ -24,3 +24,7 @@ set noshelltemp
 set lines=30
 set columns=130
 
+" ■■set enc=utf-8でメニューが文字化けする対応
+source $VIMRUNTIME/delmenu.vim
+set langmenu=ja_jp.utf-8
+source $VIMRUNTIME/menu.vim
