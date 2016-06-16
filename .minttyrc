@@ -7,3 +7,4 @@ Transparency=70
 OpaqueWhenFocused=no
 Columns=150
 Rows=30
+IMECursorColour=255,0,0
