@@ -5,7 +5,7 @@
 if has('mac')
   set guifont=Ricty\ Diminished:h18
 else
-  set guifont=Inconsolata:h14
+  set guifont=Inconsolata:h12
 endif
 
 " ■■バックアップ・スワップ設定
