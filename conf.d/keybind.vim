@@ -29,6 +29,7 @@ nnoremap x "_x
 nnoremap D "_D
 nnoremap dd "_dd
 nnoremap cc "_cc
+nnoremap c "_c
 " -------------------------------------
 " ■■検索関連
 " very magic
@@ -36,10 +37,10 @@ nnoremap cc "_cc
 
 " -------------------------------------
 " ■■Quickfix関連
-nnoremap <q :cprevious<CR>   " 前へ
-nnoremap >q :cnext<CR>       " 次へ
-nnoremap <Q :<C-u>cfirst<CR> " 最初へ
-nnoremap >Q :<C-u>clast<CR>  " 最後へ
+nnoremap <S-F3> :cprevious<CR>   " 前へ
+nnoremap <F3> :cnext<CR>       " 次へ
+"nnoremap <Q :<C-u>cfirst<CR> " 最初へ
+"nnoremap >Q :<C-u>clast<CR>  " 最後へ
 
 " -------------------------------------
 " ■■汎用
@@ -53,7 +54,7 @@ endfunction
 command! -nargs=0 CopyPath call CopyPath()
 nnoremap <Space>cp :echo CopyPath()<CR>
 " ハイライトオフ
-nnoremap <Esc><Esc> :noh<CR>
+nnoremap <Esc><Esc> :noh<CR>:cex ""<CR>:ccl<CR>
 
 " ==========================================================================
 " ■挿入モード
