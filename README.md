@@ -33,8 +33,8 @@ mklink "C:\Windows\System32\git-bash.bat" D:\myworks-github\dotfiles\git-bash.ba
 ```
 
 ```bash
-cp -Rp /usr/share/vim/vim74-kaoriya-win64/vim74/syntax ~/.vim/
-cp -p /usr/share/vim/vim74-kaoriya-win64/vim74/filetype.vim ~/.vim/
+#cp -Rp /usr/share/vim/vim80-kaoriya-win64/vim80/syntax ~/.vim/
+cp -p /usr/share/vim/vim80-kaoriya-win64/vim80/filetype.vim ~/.vim/
 ```
 
 ```dos
