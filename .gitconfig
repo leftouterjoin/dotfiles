@@ -8,6 +8,7 @@
 	editor = vim
 	fscache = true 
 	quotepath = false
+	excludesfile = ~/.gitignore_global
 [pull]
 	rebase = true
 [merge]
