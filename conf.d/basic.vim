@@ -47,7 +47,9 @@ set cursorline
 " 一致する括弧を表示
 set showmatch
 " ビーブを可視化
-set vb
+"set vb
+" ビーブもフラッシュもやめる
+set vb t_vb=
 " ルーラーを表示
 set ruler
 " ステータス行を表示
