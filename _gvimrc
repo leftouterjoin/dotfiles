@@ -7,8 +7,9 @@ if has('mac')
   set guifont=Ricty\ Diminished:h18
   set transparency=10
 else
-  set guifont=Inconsolata:h12
-  autocmd GUIEnter * set transparency=200
+"  set guifont=Inconsolata:h12
+  set guifont=Myrica\ M:h12
+  autocmd GUIEnter * set transparency=230
 endif
 
 set enc=utf-8
