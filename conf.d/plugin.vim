@@ -49,6 +49,7 @@ autocmd FileType vimfiler nmap <buffer> <S-l> gt
 " ■■修正行のハイライト
 NeoBundle 'leftouterjoin/changed'
 highlight ChangedDefaultHl cterm=bold ctermbg=red ctermfg=white gui=bold guibg=red guifg=white
+"
 
 " -------------------------------------
 " ■■自動補完
@@ -69,6 +70,15 @@ if executable('pt')
   let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
   let g:unite_source_grep_recursive_opt = ''
 endif
+
+NeoBundle 'Shougo/vimproc', {
+  \ 'build' : {
+    \ 'windows' : 'tools\\update-dll-mingw',
+    \ 'cygwin' : 'make -f make_cygwin.mak',
+    \ 'mac' : 'make -f make_mac.mak',
+    \ 'unix' : 'make -f make_unix.mak',
+  \ },
+\ }
 
 " 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグインを有効化する
 filetype plugin on
