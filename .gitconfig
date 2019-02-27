@@ -1,10 +1,10 @@
 [http]
 	postBuffer = 524288000
 [core]
-	autocrlf = false
+	autoCRLF = false
 	filemode = false
 	longpaths = true
-	whitespace = cr-at-eol
+	whitespace = trailing-space,space-before-tab
 	editor = vim
 	fscache = true 
 	quotepath = false
@@ -14,9 +14,11 @@
 [merge]
 	ff = false
 [include]
-	path = .gitconfig.os
-	path = .gitconfig.proxy
+#	path = .gitconfig.os
+#	path = .gitconfig.proxy
 	path = .gitconfig.user
+[alias]
+	diff = diff --ignore-space-change
 
 # [at win]
 # copy D:\myworks-github\dotfiles\.gitconfig.proxy.sample %userprofile%\.gitconfig.proxy
@@ -30,3 +32,9 @@
 # ln -s ~/myworks-github/dotfiles/.gitconfig.os ~/.gitconfig.os.mac
 # ln -s ~/myworks-github/dotfiles/.gitconfig ~/.gitconfig
 
+[credential]
+	helper = manager
+[gpg]
+	program = gpg
+[user]
+	signingkey = 95C54595
